@@ -15,7 +15,7 @@ dicctionario.set("u","ufat");
 
 //funtion to check if the input is valid
 function isValid(word){
-    return /^[a-z\s]+$/.test(word);
+    return /^[a-z\s]/.test(word);
 }
 
 //funtion encryp
