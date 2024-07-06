@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter",sans-serif;
+    color: white;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background:#E9ECF8;
+}
+header img {
+    width: 7em;
+}
+header {
+    width: 13%;
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+main section.input{
+    width:73%;
+    height: 100vh;
+}
+main section.input{
+    width: 73%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+main section.input div.text-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 78%;
+    height: 73%;
+    color: #072B61;
+}
+.text-input textarea {
+    width: 90%; /* Cambia esto al ancho que necesites */
+    height: 80%; /* Cambia esto a la altura que necesites */
+    padding: 10px;
+    border: none; /* Borde inicial */
+    border-radius: 5px;
+    background: transparent;
+    color: #072B61;
+    font-size: 32px;
+    resize: none;
+}
+.text-input textarea::placeholder{
+    color:#072B61;
+    font-size: 32px;
+}
+.text-input textarea:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: #072B61;
+}
+main section.input div.text-input .input-user-text{
+    background-color: transparent;
+    border: none;
+    padding: 2em;
+    color: #072B61;
+    font-size: 1.6em;
+}
+main section.output{
+    width: 27%;
+    height: 100%;
+}
+
+main section.input .container-btns{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+main section.input  .advertencia{
+    width: 73%;
+}
+main section.input  .container-button {
+    display: flex;
+    flex-direction: row;
+    width: 73%;
+    gap: 1em;
+}
+
+
+main section.input .container-btns img{
+    width: 0.8em;
+    margin-left: 0.2em;
+}
+main section.input .container-btns span{
+    color: #6a7075;
+    font-size: 0.8em;
+}
+main section.input .container-btns .encriptar{
+    background: #072B61;
+    width: 50%;
+    height: 4rem;
+    font-size: 1em;
+    border-radius: 1.3em;
+    border: none;
+}
+main section.input .container-btns .encriptar:hover{
+    background:#1552ad;
+    cursor: pointer;
+}
+
+main section.input .container-btns .encriptar:active{
+    background-color: #dbe0e5;
+    color: #072B61;
+}
+main section.input .container-btns .desencriptar{
+    background: #dbe0e5;
+    width: 50%;
+    height: 4em;
+    font-size: 1em;
+    border-radius: 1.3em;
+    border: solid 2px #072B61;
+    color: #072B61;
+}
+main section.input .container-btns .desencriptar:hover{
+    background: #f1eeee;
+    cursor: pointer;
+}
+main section.input .container-btns .desencriptar:active{
+    background: #072B61;
+    color: #E9ECF8;
+}
+main section.output{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main section.output .display-one{
+    width: 86%;
+    height: 93%;
+    border-radius: 1.3em;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main section.output .display-one .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main section.output .display-one .img img{
+    width: 70%;
+    height: auto;
+}
+main section.output .display-one .info{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+    gap: 1em;
+}
+main section.output .display-one .info p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main section.output .display-one p{
+    color: #072B61;
+    align-items: center;
+}
+main section.output .display-one .more-big{
+    font-size: 1.3em;
+    font-weight: 900;
+    text-align: justify; /* Justificar el texto */
+    text-align-last: center; /* Centrar la última línea del párrafo */
+    margin: 0 auto;
+}
+
+main section.output .display-one .less-big{
+    font-size: 0.8em;
+    font-weight: 300;
+    align-items: center;
+    text-align: justify;
+    text-align-last: center;
+}
+main section.output .ocult{
+    padding: 1.3em;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+}
+main section.output .ocult .text{
+    word-break: break-all;
+    box-sizing: border-box;
+}
+main section.output .ocult button {
+    height: 4.6em;
+    width: 100px;
+    border-radius: 1.3em;
+    background-color: transparent;
+    color: #072B61;
+    width: 100%;
+    border: solid 2px #072B61;
+    
+}
+main section.output .ocult p{
+    max-width: 100%; 
+    box-sizing: border-box; 
+    word-wrap: break-word;
+    color: black;
+    font-size: 30px;
+}
+main section.output .ocult .wraper-ocult{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+main section.output .ocult .wraper-ocult div.btn-copy{
+    width: 100%;
+    height: 8%;
+}
+main section.output .ocult .wraper-ocult button:hover{
+    background: #eaeaea;
+    cursor: pointer;
+}
+main section.output .ocult .wraper-ocult button:active{
+    background:#072B61;
+    color: #E9ECF8;
+}
+
+
+@media screen and (max-width:768px) {
+    main header img{
+        width: 5em;
+        margin-left: 2.3em;
+    }
+    main section.input div.text-input{
+        width: 100%;
+    }
+    main section.output .ocult .text{
+        width: 100%;
+        padding-left: 1em;
+    }
+    main section.input  textarea{
+        font-size: 2em;
+    }
+
+    body main{
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+    }
+    main section.input {
+        width: 100%;
+        height: 70vh;
+        box-sizing: border-box;
+    }
+    main section.input .container-btns{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    main section.input .container-btns div{
+        width: 86%;
+    }
+    main section.output{
+        width: 100%;
+        height: 28%;
+        box-sizing: border-box;
+    }
+    
+    main section.output img{
+        display: none;
+    }
+    main section.output .ocult .wraper-ocult{
+        height: 76%;
+    }
+    main section.output .ocult .wraper-ocult .btn-copy button{
+        width: 100%;
+        height: 3.8em;
+    }
+    main section.output .ocult .text p{
+        font-size: 1.1em;
+    }
+    
+}
+
+@media screen and (max-width:425px){
+    main{
+        width: 100%;
+        height: 100%;
+    }
+    main section.input  .container-button {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0.3em;
+    }
+    main section.input  .container-button {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 0.6em;
+    }
+    main section.input .container-button .encriptar, 
+    main section.input .container-button .desencriptar{
+        width: 100%;
+        height: 3.3em;
+
+    }
+    main section.input {
+        width: 100%;
+        height: 80vh;
+    }
+    main section.input div.text-input {
+        height: 20em;
+        margin-bottom: -1em;
+    }
+    .text-input textarea::placeholder{
+        color:#072B61;
+        font-size: 1em;
+    }
+    main section.input .text-input textarea{
+        font-size: 1.3em;
+    }
+    
+    main section.output .ocult{
+        padding:0.6em;
+
+    }
+    main section.output .ocult {
+        font-size: 1em;
+
+    }
+    main section.output .ocult .wraper-ocult .btn-copy button{
+        display: inline-block;
+        width: 100%;
+        height: 3em;
+    }
+    main section.output{
+        margin-top: -3em;
+    }
+}

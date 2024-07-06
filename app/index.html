@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el numero</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <main>
+            <header>
+                <div class="logo">
+                    <img src="/app/assets/Logo.png" alt="">
+                </div>
+            </header>
+            <section class="input">
+                <div class="text-input">
+                    <textarea name="" id="input-user-text" placeholder="Ingresa el texto"></textarea>
+                </div>
+                <div class="container-btns">
+                        <div class="advertencia">
+                            <img src="/app/assets/bi_exclamation-circle-fill.png" alt="">
+                            <span>Solo letras minusculas y sin acentos</span>
+                        </div>
+                        <div class="container-button">
+                            <button class="encriptar" id="encriptar">Encriptar</button>
+                            <button class="desencriptar" id="desencriptar">Desencriptar</button>
+                        </div>
+                </div>
+            </section>
+            <section class="output">
+                <div class="display-one">
+                    <div class="ocult" style="display: none;" id="ocult">
+                       <div class="wraper-ocult">
+                            <div class="text">
+                                <p id="result-text">
+                                </p>
+                            </div> 
+                            <div class="btn-copy" id="copy-result">
+                                <button id="btn-copy">Copiar</button>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="start-info" id="start-info">
+                        <div class="img">
+                            <img src="/app/assets/Muñeco.png" alt="" srcset="">
+                        </div>
+                        <div class="info">
+                            <p class="more-big">Ningún mensaje fue<br>encontrado</p>
+                            <p class="less-big">Ingresa el texto que deseas encriptar o<br>desencriptar</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
